@@ -1,0 +1,68 @@
+.bt {
+    width: 700px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.b1 {
+    background-color: greenyellow;
+    width: 50%;
+    height: 550px;
+    animation-name: key1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.b2 {
+    width: 50%;
+    background-color: purple;
+    color: red;
+    animation-name: key2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.vien {
+    border: 5px black solid;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    margin-top: -5px;
+}
+
+img {
+    width: 100%;
+}
+
+.fas fa-user-alt {
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+@keyframes key1 {
+    0% {
+        background-color: white
+    }
+    33% {
+        background-color: greenyellow
+    }
+    66% {
+        background-color: yellow
+    }
+    100% {
+        background-color: red;
+        color: white;
+    }
+}
+
+@keyframes key2 {
+    0%{background-color: white;}
+    33%{background-color: purple; color: white}
+    66%{background-color: blue; color: white}
+    100%{background-color: gainsboro}
+}
